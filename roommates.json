@@ -65,6 +65,30 @@
       "nombre": "Eeli Latt",
       "debe": 0,
       "recibe": 0
+    },
+    {
+      "id": "a8641c70-d5ca-4161-93e5-10edca8998d1",
+      "nombre": "Avery Omahony",
+      "debe": 0,
+      "recibe": 0
+    },
+    {
+      "id": "0adf76d2-a0bb-42e6-a4aa-5cb689cc535c",
+      "nombre": "Branimir Srećković",
+      "debe": 0,
+      "recibe": 0
+    },
+    {
+      "id": "1d5ac8e5-3219-4bf8-95c8-dee8670a2a2c",
+      "nombre": "Dionésia Ferreira",
+      "debe": 0,
+      "recibe": 0
+    },
+    {
+      "id": "91143a3e-5691-44dd-90bc-9cf0d8f52fb7",
+      "nombre": "Maxime Park",
+      "debe": 0,
+      "recibe": 0
     }
   ]
 }

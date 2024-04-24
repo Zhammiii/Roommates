@@ -49,7 +49,7 @@ let roommates = [];
               `);
           });
         } catch (e) {
-          console.log("tenemos un problema en el main.js");
+          console.log("tenemos un en el imprimir");
         }
       };
 
