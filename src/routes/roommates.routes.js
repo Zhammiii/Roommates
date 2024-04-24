@@ -3,9 +3,9 @@ const router = Router();
 import { nuevoRoommate , getRoommates } from "../controllers/roommates.controllers.js";
 
 /* obtener roommates */
-router.get("/roommates", getRoommates );
+router.get("/", getRoommates );
 
 /* Agregar roommates */
-router.post("/roommates",nuevoRoommate);
+router.post("/",nuevoRoommate);
 
 export default router;

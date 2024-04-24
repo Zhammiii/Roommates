@@ -3,15 +3,15 @@ const router = Router();
 import { agregarGasto , editGasto , updateGasto ,deleteGasto } from "../controllers/gastos.controllers.js";
 
 /* obtener pagos */
-router.get("/gastos", editGasto);
+router.get("/", editGasto);
 
 /*  */
-router.post("/gastos", agregarGasto);
+router.post("/", agregarGasto);
 
 /* modificar pagos */
-router.put("/gastos", updateGasto);
+router.put("/", updateGasto);
 
 /* borrar pagos */
-router.delete("/gastos", deleteGasto);
+router.delete("/", deleteGasto);
 
 export default router;

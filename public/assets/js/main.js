@@ -2,12 +2,12 @@ let roommates = [];
       let gastos = [];
       let gastoEditing = null;
       const getRoommates = async () => {
-        const res = await fetch("http://localhost:3000/apiV1/roommates/roommates");
+        const res = await fetch("http://localhost:3000/apiV1/roommates");
         const data = await res.json();
         roommates = data.roommates;
       };
       const getGastos = async () => {
-        const res = await fetch("http://localhost:3000/apiV1/gastos/gastos");
+        const res = await fetch("http://localhost:3000/apiV1/gastos");
         const data = await res.json();
         gastos = data.gastos;
       };
@@ -54,7 +54,7 @@ let roommates = [];
       };
 
       const nuevoRoommate = () => {
-        fetch("http://localhost:3000/apiV1/roommates/roommates", { method: "POST" })
+        fetch("http://localhost:3000/apiV1/roommates", { method: "POST" })
           .then((res) => res.json())
           .then(() => {
             imprimir();
@@ -65,7 +65,7 @@ let roommates = [];
         const roommateSelected = $("#roommatesSelect").val();
         const descripcion = $("#descripcion").val();
         const monto = Number($("#monto").val());
-        await fetch("http://localhost:3000/apiV1/gastos/gastos", {
+        await fetch("http://localhost:3000/apiV1/gastos", {
           method: "POST",
           body: JSON.stringify({
             roommate: roommateSelected,
@@ -77,7 +77,7 @@ let roommates = [];
       };
 
       const deleteGasto = async (id) => {
-        await fetch("http://localhost:3000/apiV1/gastos/gastos?id=" + id, {
+        await fetch("http://localhost:3000/apiV1/gastos?id=" + id, {
           method: "DELETE",
         });
         imprimir();
@@ -87,7 +87,7 @@ let roommates = [];
         const roommateSelected = $("#roommatesSelectModal").val();
         const descripcion = $("#descripcionModal").val();
         const monto = Number($("#montoModal").val());
-        await fetch("http://localhost:3000/apiV1/gastos/gastos?id=" + gastoEditing, {
+        await fetch("http://localhost:3000/apiV1/gastos?id=" + gastoEditing, {
           method: "PUT",
           body: JSON.stringify({
             roommate: roommateSelected,
