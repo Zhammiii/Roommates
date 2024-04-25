@@ -72,6 +72,7 @@ let roommates = [];
             descripcion,
             monto,
           }),
+          headers: { "Content-Type": "application/json" },
         });
         imprimir();
       };
@@ -94,6 +95,7 @@ let roommates = [];
             descripcion,
             monto,
           }),
+          headers: { "Content-Type": "application/json" },
         });
         $("#exampleModal").modal("hide");
         imprimir();

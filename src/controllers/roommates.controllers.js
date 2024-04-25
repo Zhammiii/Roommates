@@ -14,7 +14,7 @@ export async function nuevoRoommate (req,res) {
     };
     const roommatesData = fs.readFileSync("roommates.json", "utf8");
     const data = JSON.parse(roommatesData);
-    const roommie = data.results
+    const roommie = data.roommates
     roommie.push(roommate);
     fs.writeFileSync("roommates.json", JSON.stringify(data));
     console.log("Nuevo roommate añadido:", roommate);

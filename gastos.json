@@ -1,1 +1,22 @@
-{"gastos":[{"id":"fac3f688-3536-4442-8c35-b1d88eb4894e","roommate":"Ricardo Delgado","descripcion":"cine","monto":"5000"},{"id":"bdc686d2-2cf2-4af0-8cf8-29667f4653ed"},{"id":"702c3846-7ff0-448a-bdbf-9c2202552f79"},{"id":"8f093665-d0f6-40e0-9656-6facf1f9c739"},{"id":"d247ec97-5b5f-49d0-a407-2354b40dc517"},{"id":"36c56169-57d2-4dcb-8458-911378dbbd8f","roommate":"Maxime Park","descripcion":"Netflix","monto":"12000"}]}
+{
+  "gastos": [
+    {
+      "id": "fac3f688-3536-4442-8c35-b1d88eb4894e",
+      "roommate": "Ricardo Delgado",
+      "descripcion": "cine",
+      "monto": "5000"
+    },
+    {
+      "id": "36c56169-57d2-4dcb-8458-911378dbbd8f",
+      "roommate": "Maxime Park",
+      "descripcion": "Netflix",
+      "monto": "12000"
+    },
+    {
+      "id": "48f2b502-84d4-4af9-9358-0e36d9baca5b",
+      "roommate": "Ricardo Delgado",
+      "descripcion": "Articulos de limpieza",
+      "monto": 15000
+    }
+  ]
+}

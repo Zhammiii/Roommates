@@ -1,11 +1,11 @@
 import { Router } from "express";
 const router = Router();
-import { agregarGasto , editGasto , updateGasto ,deleteGasto } from "../controllers/gastos.controllers.js";
+import { agregarGasto , updateGasto ,deleteGasto , getGastos} from "../controllers/gastos.controllers.js";
 
 /* obtener pagos */
-router.get("/", editGasto);
+router.get("/", getGastos);
 
-/*  */
+/*  agregar gastos*/
 router.post("/", agregarGasto);
 
 /* modificar pagos */
