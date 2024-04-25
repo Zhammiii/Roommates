@@ -78,7 +78,7 @@ let roommates = [];
       };
 
       const deleteGasto = async (id) => {
-        await fetch("http://localhost:3000/apiV1/gastos?id=" + id, {
+        await fetch("http://localhost:3000/apiV1/gastos/?id=" + id, {
           method: "DELETE",
         });
         imprimir();
@@ -88,7 +88,7 @@ let roommates = [];
         const roommateSelected = $("#roommatesSelectModal").val();
         const descripcion = $("#descripcionModal").val();
         const monto = Number($("#montoModal").val());
-        await fetch("http://localhost:3000/apiV1/gastos?id=" + gastoEditing, {
+        await fetch("http://localhost:3000/apiV1/gastos/?id=" + gastoEditing, {
           method: "PUT",
           body: JSON.stringify({
             roommate: roommateSelected,

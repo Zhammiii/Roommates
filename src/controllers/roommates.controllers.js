@@ -1,6 +1,7 @@
 import axios from "axios";
 import fs from "fs";
 import { v4 as uuidv4 } from "uuid";
+import { recalcularDeudas } from "../controllers/calculo.controllers.js"
 
 export async function nuevoRoommate (req,res) {
   try {
@@ -10,13 +11,14 @@ export async function nuevoRoommate (req,res) {
       id: uuidv4(),
       nombre: newRoommate.name.first + " " + newRoommate.name.last,
       debe: 0,
-      recibe: 0,
+      recibe:0,
     };
     const roommatesData = fs.readFileSync("roommates.json", "utf8");
     const data = JSON.parse(roommatesData);
     const roommie = data.roommates
     roommie.push(roommate);
     fs.writeFileSync("roommates.json", JSON.stringify(data));
+    recalcularDeudas();
     console.log("Nuevo roommate añadido:", roommate);
     res.status(200).json(data);
   } catch (error) {
